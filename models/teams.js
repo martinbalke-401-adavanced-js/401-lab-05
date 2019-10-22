@@ -1,16 +1,12 @@
 'use strict';
 
-const DataModel = require('./model.js');
+const Model = require('./model.js');
 
-class Teams extends DataModel {
-  constructor(file) {
-    super(
-      {
-        id: { required: true, type: 'uuid' },
-        name: { required: true, type: 'string' }
-      },
-      file
-    );
+const schema = require('./team-schema');
+
+class Teams extends Model {
+  constructor() {
+    super(schema);
   }
 }
 
