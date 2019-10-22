@@ -13,12 +13,9 @@
 #### `Model.js`
 ##### Model.create , Model.get, Model.getByQuery, Model.update, Model.delete
 
-###### `create({object}) -> object`
-Creates an collection inside of mongodb as long as schema types are all present
 
-###### `get(ID) -> object`
-Get an item out of the database searching by the _id property
-
+#### `index.js`
+##### makePerson, makeTeam, findPerson, findTeam, updatePerson, ranomizeTeams, commandLineQuery
 
 
 ### Setup

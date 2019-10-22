@@ -16,8 +16,7 @@ class Model {
   }
 
   getByQuery(query) {
-    if (query) return this.schema.find(query);
-    else return this.schema.find({});
+    return this.schema.find(query);
   }
 
  
